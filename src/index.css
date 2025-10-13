@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-blush via-rose to-lavender min-h-screen font-cute;
+  background-attachment: fixed;
+}
+
+@layer components {
+  /* .glass-card {
+    @apply bg-white/60 backdrop-blur-xl shadow-elegant rounded-3xl border border-white/30;
+  } */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg shadow-xl rounded-3xl border border-white/20;
+  }
+  
+
+  .cute-button {
+    @apply bg-gradient-to-r from-rose to-peach text-white font-semibold px-8 py-4 rounded-2xl hover:shadow-soft transition-all duration-500 transform hover:scale-105 hover:rotate-1;
+    background-size: 200% 200%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  .task-item {
+    @apply flex justify-between items-center p-5 rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-soft hover:scale-[1.02];
+  }
+
+  .floating-element {
+    @apply animate-float;
+  }
+
+  .priority-high {
+    @apply bg-gradient-to-r from-red-100 to-pink-100 border-l-4 border-red-400;
+  }
+
+  .priority-medium {
+    @apply bg-gradient-to-r from-yellow-100 to-orange-100 border-l-4 border-yellow-400;
+  }
+
+  .priority-low {
+    @apply bg-gradient-to-r from-green-100 to-emerald-100 border-l-4 border-green-400;
+  }
+
+  .category-personal {
+    @apply bg-gradient-to-r from-purple-100 to-pink-100;
+  }
+
+  .category-work {
+    @apply bg-gradient-to-r from-blue-100 to-indigo-100;
+  }
+
+  .category-shopping {
+    @apply bg-gradient-to-r from-orange-100 to-red-100;
+  }
+
+  .category-health {
+    @apply bg-gradient-to-r from-green-100 to-teal-100;
+  }
+
+  .category-education {
+    @apply bg-gradient-to-r from-indigo-100 to-purple-100;
+  }
+
+  .overdue-task {
+    @apply animate-pulse-gentle bg-red-50 border-2 border-red-200;
+  }
+
+  .completed-task {
+    @apply bg-gradient-to-r from-green-100 to-green-200 opacity-75;
+  }
+}
