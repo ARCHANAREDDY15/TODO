@@ -80,10 +80,6 @@ The background gradient can be adjusted in `src/index.css` by changing the `bg-g
 4. Push to the branch: `git push origin feature-name`
 5. Open a pull request
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👤 Author
 
 **Archana Bapathi**
