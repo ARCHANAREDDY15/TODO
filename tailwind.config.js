@@ -24,6 +24,11 @@ export default {
           bubblegum: "#FCE4EC",
           periwinkle: "#E8EAF6",
           pistachio: "#F1F8E9",
+          pink: "#FF69B4",
+          pink200: "#FCE7F3",
+          pink300: "#F9A8D4",
+          pink400: "#F472B6",
+          pink500: "#EC4899",
         },
         fontFamily: {
           cute: ["Poppins", "sans-serif"],
